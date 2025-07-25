@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "test": "npm run build && node dist/examples/server.js & sleep 2 && node dist/examples/client.js",
+    "test": "npm run build && NODE_ENV=test node dist/examples/server.js & sleep 2 && NODE_ENV=test node dist/examples/client.js && wait",
     "test:server": "npm run build && node dist/examples/server.js",
     "test:client": "npm run build && node dist/examples/client.js",
     "lint": "echo \"Linting not configured yet\"",

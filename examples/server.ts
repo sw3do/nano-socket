@@ -64,6 +64,13 @@ server.on('error', (error) => {
 
 server.listen().then(() => {
   console.log('Server started successfully!');
+  
+  if (process.env.NODE_ENV === 'test') {
+    setTimeout(() => {
+      console.log('Test completed, shutting down server...');
+      server.close().then(() => process.exit(0));
+    }, 8000);
+  }
 }).catch((error) => {
   console.error('Failed to start server:', error);
 });

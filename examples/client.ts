@@ -66,6 +66,14 @@ setTimeout(() => {
   }
 }, 3000);
 
+if (process.env.NODE_ENV === 'test') {
+  setTimeout(() => {
+    console.log('Test completed, disconnecting client...');
+    client.disconnect();
+    process.exit(0);
+  }, 6000);
+}
+
 process.on('SIGINT', () => {
   console.log('\nDisconnecting client...');
   client.disconnect();
