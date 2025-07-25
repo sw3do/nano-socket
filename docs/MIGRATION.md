@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
 #### NanoSocket (After)
 
 ```typescript
-import { NanoSocket } from 'nano-socket';
+import { NanoSocket } from '@sw3doo/nano-socke';
 
 const server = new NanoSocket({
   port: 3000,
@@ -104,7 +104,7 @@ socket.emit('join-room', 'general');
 #### NanoSocket Client (After)
 
 ```typescript
-import { NanoSocketClient } from 'nano-socket';
+import { NanoSocketClient } from '@sw3doo/nano-socke';
 
 const client = new NanoSocketClient('ws://localhost:3000', {
   autoConnect: true,
@@ -169,7 +169,7 @@ wss.on('connection', (ws) => {
 #### NanoSocket (After)
 
 ```typescript
-import { NanoSocket } from 'nano-socket';
+import { NanoSocket } from '@sw3doo/nano-socke';
 
 const server = new NanoSocket({ port: 3000 });
 
@@ -217,7 +217,7 @@ ws.on('close', () => {
 #### NanoSocket Client (After)
 
 ```typescript
-import { NanoSocketClient } from 'nano-socket';
+import { NanoSocketClient } from '@sw3doo/nano-socke';
 
 const client = new NanoSocketClient('ws://localhost:3000');
 
@@ -274,7 +274,7 @@ ws.onerror = (error) => {
 ### After (NanoSocket)
 
 ```typescript
-import { NanoSocketClient } from 'nano-socket';
+import { NanoSocketClient } from '@sw3doo/nano-socke';
 
 const client = new NanoSocketClient('ws://localhost:3000');
 
@@ -316,7 +316,7 @@ server.on('connection', (socket) => {
 ### After (NanoSocket)
 
 ```typescript
-import { NanoSocket } from 'nano-socket';
+import { NanoSocket } from '@sw3doo/nano-socket';
 
 const server = new NanoSocket({ port: 3000 });
 

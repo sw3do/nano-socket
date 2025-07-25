@@ -39,7 +39,7 @@ By participating in this project, you agree to abide by our Code of Conduct. Ple
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/nano-socket.git
+git clone https://github.com/sw3doo/nano-socket.git
 cd nano-socket
 
 # Install dependencies
