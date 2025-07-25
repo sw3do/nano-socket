@@ -1,0 +1,48 @@
+{
+  "name": "nano-socket",
+  "version": "1.0.0",
+  "description": "Ultra-fast WebSocket library built on uWebSockets.js with socket.io-like API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "npm run build && node dist/examples/server.js & sleep 2 && node dist/examples/client.js",
+    "test:server": "npm run build && node dist/examples/server.js",
+    "test:client": "npm run build && node dist/examples/client.js",
+    "lint": "echo \"Linting not configured yet\"",
+    "docs": "echo \"Documentation generation not configured yet\"",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "websocket",
+    "socket.io",
+    "uwebsockets",
+    "realtime",
+    "fast",
+    "nano"
+  ],
+  "author": "sw3do",
+  "license": "MIT",
+  "dependencies": {
+    "@types/ws": "^8.18.1",
+    "uws": "github:uNetworking/uWebSockets.js#v20.54.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sw3do/nano-socket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sw3do/nano-socket/issues"
+  },
+  "homepage": "https://github.com/sw3do/nano-socket#readme"
+}
