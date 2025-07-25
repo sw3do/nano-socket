@@ -56,12 +56,6 @@ client2.on('global-message', (data) => {
   console.log('Client 2 global message:', data);
 });
 
-setInterval(() => {
-  if (client2.connected) {
-    client2.emit('message', `Ping from Client 2 at ${new Date().toISOString()}`);
-  }
-}, 7000);
-
 setTimeout(() => {
   if (client2.connected) {
     client2.emit('broadcast', 'Hello everyone from Client 2!');

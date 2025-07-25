@@ -60,12 +60,6 @@ client.on('global-message', (data) => {
   console.log('Global message:', data);
 });
 
-setInterval(() => {
-  if (client.connected) {
-    client.emit('message', `Ping from client at ${new Date().toISOString()}`);
-  }
-}, 5000);
-
 setTimeout(() => {
   if (client.connected) {
     client.emit('broadcast', 'Hello everyone!');
