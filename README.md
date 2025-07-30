@@ -54,13 +54,13 @@
 
 ```bash
 # Using npm
-npm install @sw3doo/nano-socke
+npm install @sw3doo/nano-socket
 
 # Using yarn
-yarn add @sw3doo/nano-socke
+yarn add @sw3doo/nano-socket
 
 # Using pnpm
-pnpm add @sw3doo/nano-socke
+pnpm add @sw3doo/nano-socket
 ```
 
 ### Requirements
@@ -74,7 +74,7 @@ pnpm add @sw3doo/nano-socke
 ### Server Example
 
 ```typescript
-import { NanoSocket } from '@sw3doo/nano-socke';
+import { NanoSocket } from '@sw3doo/nano-socket';
 
 // Create server with configuration
 const server = new NanoSocket({
@@ -543,7 +543,7 @@ NanoSocket is built on uWebSockets.js, which provides:
 NanoSocket is written in TypeScript and provides comprehensive type definitions:
 
 ```typescript
-import { NanoSocket, NanoSocketClient, ServerOptions, ClientOptions } from '@sw3doo/nano-socke';
+import { NanoSocket, NanoSocketClient, ServerOptions, ClientOptions } from '@sw3doo/nano-socket';
 
 const server: NanoSocket = new NanoSocket({
   port: 3000,
